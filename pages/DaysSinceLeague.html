@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Days Since</title>
+</head>
+<body>
+    <!-- <script src="main.js"></script> -->
+    <div>Days Since </div>
+    <div>
+        Days:
+        <p id="days"></p>
+    </div>
+    <div>Hours:<p id="hours"></p></div>
+    <div>Minutes:<p id="minutes"></p></div>
+    <div>Seconds:<p id="seconds"></p></div> 
+</body>
+<script>
+    const days = document.querySelector("#days");
+    const hours = document.querySelector("#hours");
+    const minutes = document.querySelector("#minutes");
+    const seconds = document.querySelector("#seconds");
+
+    const d = new Date().getTime();
+
+    const startDay = new Date("January 13, 2024 14:00:00");
+
+    let timeSince = d - startDay;
+
+    setInterval(TimeSince, 500);
+
+    function TimeSince(){
+        timeSince += 500;
+
+        const thing = timeSince/86400000;
+
+        days.innerHTML = Math.floor(thing);
+
+        hours.innerHTML = Math.floor(24 * (thing - Math.floor(thing)));
+
+        minutes.innerHTML = Math.floor(60 * (24 * (thing - Math.floor(thing)) - Math.floor(24 * (thing - Math.floor(thing)))));
+
+        seconds.innerHTML = Math.floor(60 * (60 * (24 * (thing - Math.floor(thing)) - Math.floor(24 * (thing - Math.floor(thing)))) - Math.floor(60 * (24 * (thing - Math.floor(thing)) - Math.floor(24 * (thing - Math.floor(thing)))))));
+    }
+</script>
+</html>
