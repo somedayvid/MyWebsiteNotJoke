@@ -45,11 +45,10 @@ h1{
     justify-content: center;
 }
 
-#proj1{
-    filter: blur(6px);
-    transition: blur();
+.proj{
+    filter: blur(0px);
 }
 
-#proj1:hover{
-    filter: blur(0px);
+.proj:hover{
+    filter: blur(6px);
 }
