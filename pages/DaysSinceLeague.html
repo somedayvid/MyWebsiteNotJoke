@@ -34,15 +34,23 @@
     function TimeSince(){
         timeSince += 500;
 
-        const thing = timeSince/86400000;
+        const thing = timeSince/1000;
 
-        days.innerHTML = Math.floor(thing);
 
-        hours.innerHTML = Math.floor(24 * (thing - Math.floor(thing)));
 
-        minutes.innerHTML = Math.floor(60 * (24 * (thing - Math.floor(thing)) - Math.floor(24 * (thing - Math.floor(thing)))));
+        days.innerHTML = thing/60/60/24;
 
-        seconds.innerHTML = Math.floor(60 * (60 * (24 * (thing - Math.floor(thing)) - Math.floor(24 * (thing - Math.floor(thing)))) - Math.floor(60 * (24 * (thing - Math.floor(thing)) - Math.floor(24 * (thing - Math.floor(thing)))))));
+        hours.innerHTML = thing/60/60 - thing/60/60/24;
+
+    
+
+        // hours.innerHTML = Math.floor(24 * (thing - Math.floor(thing)));
+
+        // minutes.innerHTML = Math.floor(60 * (24 * (thing - Math.floor(thing)) - Math.floor(24 * (thing - Math.floor(thing)))));
+
+        // seconds.innerHTML = Math.floor(60 * (60 * (24 * (thing - Math.floor(thing)) - Math.floor(24 * (thing - Math.floor(thing)))) - Math.floor(60 * (24 * (thing - Math.floor(thing)) - Math.floor(24 * (thing - Math.floor(thing)))))));
     }
+
+    
 </script>
 </html>
