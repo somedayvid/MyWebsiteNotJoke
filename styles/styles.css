@@ -6,7 +6,7 @@ body{
     background-color: red;
     cursor: default;
     height: 100%;
-    background-image: linear-gradient(100deg,  red 70%, black 30%);
+    background-image: linear-gradient(110deg,  red 50%, black 50%);
     overflow-x: hidden;
 }
 
@@ -111,10 +111,11 @@ li{
     margin: -1px 0;
 }
 
-li:nth-child(1) {margin-left: 52px; width: 42.5%;}
-li:nth-child(2) {margin-left: 33px; width: 40%;}
-li:nth-child(3) {margin-left: 20px; width: 45%;}
-li:nth-child(4) {margin-left: 0px; width: 40%;}
+li:nth-child(1) {margin-left: 67px; width: 45%;}
+li:nth-child(2) {margin-left: 52px; width: 42.5%;}
+li:nth-child(3) {margin-left: 33px; width: 40%;}
+li:nth-child(4) {margin-left: 20px; width: 45%;}
+li:nth-child(5) {margin-left: 0px; width: 40%;}
 
 li:hover{
     background-color: red;
@@ -181,7 +182,8 @@ a{
 .bottom-black-backing-shadow{
     background-color: black;
     padding: 10px 0px 10px 20px;
-    box-shadow: 10px 10px 0 10px black;
+    box-shadow: 10px 15px 0 10px black;
+    transform: rotate(1deg);
 }
 
 #options-container{
@@ -232,6 +234,7 @@ h1{
     align-items: center;
     flex-direction: column;
     width: 100%;
+    color: white;
 }
 
 h2{
