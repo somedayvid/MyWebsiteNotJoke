@@ -1,20 +1,25 @@
 html{
+    scroll-behavior: smooth;
+}
+
+body{
     background-color: red;
     cursor: default;
     height: 100%;
-    background-image: linear-gradient(80deg,  red 70%, black 30%);
+    background-image: linear-gradient(100deg,  red 70%, black 30%);
     overflow-x: hidden;
 }
 
 #page-container {
     flex-flow: row;
     display: flex;
+    height: 100vh;
 }
 
 #left-container {
-    margin-top: 40%;
+    margin-top: 60vh;
     flex-flow: column;
-    width: 50%;
+    width: 50vw;
 }
 
 #right-container {
@@ -117,6 +122,7 @@ li:hover{
 
 a{
     text-decoration: none;
+    color: white;
 }
 
 .link-icons{
@@ -135,7 +141,6 @@ a{
     font-size: 20px;
     font-family: "Darumadrop One";
     z-index: 0;
-    width: 120%;
 }
 
 #white-backing{
@@ -181,4 +186,70 @@ a{
 
 #options-container{
     position: relative;
+}
+
+#description{
+    color: white;
+    background-color: black;
+    box-shadow: 0 0 0 10px white;
+    margin-left: 15%;
+    transform: rotate(-1deg) skew(2deg, 0deg);
+    padding: 20px;
+    font-family: "Darumadrop One";
+    font-size: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+#name-container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-family: "Darumadrop One";
+    font-size: 50px;
+    margin-top: -70px;
+    position: relative;
+    z-index: 1;
+}
+
+#first-name, #last-name{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: -60px 0;
+}
+
+#showcase-container{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+
+.showcase-item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+h2{
+    display: inline-block;
+    font-family: "Bebas Neue";
+    font-size: 5vw;
+    color: black;
+    background-color: white;
+    width:auto;
+    text-align: center;
+    padding: 0 10vw;
+    box-shadow: 0 0 0 10px black;
+}
+
+#game-development-container h2{
+    transform: rotate(1deg);
+}
+
+#web-development-container h2{
+    transform: rotate(-2deg);
 }
