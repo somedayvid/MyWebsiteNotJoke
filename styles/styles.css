@@ -6,8 +6,11 @@ body{
     background-color: red;
     cursor: default;
     height: 100%;
-    background-image: linear-gradient(110deg,  red 50%, black 50%);
+    background-image: linear-gradient(100deg,  red 55%, black 45%);
     overflow-x: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
 }
 
 #page-container {
@@ -101,23 +104,26 @@ body{
 
 ul{
     list-style-type: none;
+}
+
+ul.options-dropdown{
     padding: 0;
     transform: rotate(-1deg);
     margin-left: 80px;
 }
 
-li{
-    padding-left: 100px;
+ul.options-dropdown li{
+    padding-left: 2vw;
     margin: -1px 0;
 }
 
-li:nth-child(1) {margin-left: 67px; width: 45%;}
-li:nth-child(2) {margin-left: 52px; width: 42.5%;}
-li:nth-child(3) {margin-left: 33px; width: 40%;}
-li:nth-child(4) {margin-left: 20px; width: 45%;}
-li:nth-child(5) {margin-left: 0px; width: 40%;}
+ul.options-dropdown li:nth-child(1) {margin-left: 67px; width: 45%;}
+ul.options-dropdown li:nth-child(2) {margin-left: 52px; width: 42.5%;}
+ul.options-dropdown li:nth-child(3) {margin-left: 33px; width: 40%;}
+ul.options-dropdown li:nth-child(4) {margin-left: 20px; width: 45%;}
+ul.options-dropdown li:nth-child(5) {margin-left: 0px; width: 40%;}
 
-li:hover{
+ .options-dropdown li:hover{
     background-color: red;
 }
 
@@ -227,6 +233,7 @@ h1{
     justify-content: center;
     flex-flow: column;
     align-items: center;
+    margin: 0 15vw;
 }
 
 .showcase-item{
@@ -235,12 +242,13 @@ h1{
     flex-direction: column;
     width: 100%;
     color: white;
+    margin: 5vh 0;
 }
 
 h2{
     display: inline-block;
-    font-family: "Bebas Neue";
-    font-size: 5vw;
+    font-family: "Rowdies";
+    font-size: 3vw;
     color: black;
     background-color: white;
     width:auto;
@@ -255,4 +263,96 @@ h2{
 
 #web-development-container h2{
     transform: rotate(-2deg);
+}
+
+.project{
+    display: flex;
+    flex-direction: row;
+}
+
+h3{
+    text-align: center;
+    font-size: 2vw;
+    font-family: "Bebas Neue";
+}
+
+.project-stuffs{
+    font-family: "Darumadrop One";
+}
+
+.employer{
+    font-family: "Rowdies"
+}
+
+.employee-role{
+    font-family: "Bebas Neue";
+}
+
+.work-time{
+    font-family: "Darumadrop One";
+}
+
+#writings-list li{
+    background-color: black;
+}
+
+.project-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#writing-grid{
+    display: grid;
+    gap: 2vw;
+    background-color: black;
+    padding: 1vw;
+    box-shadow: 0 0 0 10px white, 0 0 0 15px black;
+    font-family: "Darumadrop One";
+}
+
+.writing-name{
+    grid-column: 1;
+}
+
+.published{
+    grid-column: 2;
+}
+
+.writing-link{
+    grid-column: 3;
+}
+
+.project-all-but-title{
+    display: grid;
+    grid-template-columns: 2fr auto;
+    background-color: black;
+    padding: 1vw;
+    box-shadow: 0 0 0 10px white;
+}
+
+.left-right-project-grid{
+    display:grid;
+    grid-template-columns: 1fr auto;
+    width: 100%;
+    column-gap: 1vw;
+    margin: 2vh 0;
+}
+
+.right-left-project-grid{
+    display: grid;
+    grid-template-columns: auto 2fr 1fr;
+    width:100%;
+    justify-content: space-between;
+    column-gap: 1vw;
+    margin: 2vh 0;
+}
+
+footer{
+    background-color: white;
+    margin: -10px;
+    text-align: center;
+    font-family: "Darumadrop One";
+    height: auto;
+    font-size: 4vh;
 }

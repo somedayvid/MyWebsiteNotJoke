@@ -78,9 +78,9 @@
                     </div>
                 </div>
                 <div id="options-container">
-                    <ul>
+                    <ul class="options-dropdown">
                         <li class="black-box">
-                            <a href="../items/David Gao Resume CS .pdf">
+                            <a href="../items/David Gao Resume CS .pdf" target="_blank" rel="noopener">
                                 <i class="fa-duotone fa-solid fa-file" style="--fa-primary-color: #ffffff; --fa-secondary-color: #ff2222; --fa-secondary-opacity: 1;"></i>                             
                                 Resume Link
                             </a>
@@ -105,19 +105,19 @@
                         </li>
                         <li class="black-box">
                             <a href="#work-experience-container">
-                                <i class="fa-solid fa-keyboard" style="color: #ffffff;"></i>
+                                <i class="fa-solid fa-briefcase" style="color: #ffffff;"></i>
                                 Work Experience
                             </a>
                         </li>
                     </ul>
-                    <ul id="white-backing">
+                    <ul id="white-backing" class="options-dropdown" >
                         <li class="white-box-backing">Resume </li>
                         <li class="white-box-backing">Game </li>
                         <li class="white-box-backing">Web </li>
                         <li class="white-box-backing">Written </li>
                         <li class="white-box-backing">Work</li>
                     </ul>
-                    <ul id="black-backing">
+                    <ul id="black-backing" class="options-dropdown">
                         <li class="black-box-backing">Resume Link</li>
                         <li class="black-box-backing">Game Development</li>
                         <li class="black-box-backing">Web Development</li>
@@ -131,44 +131,89 @@
     <div id="showcase-container">
         <div id="game-development-container" class="showcase-item">
             <h2>Game Development</h2>
-            <div>
+            <div class="left-right-project-grid">
                 <h3>Talk to Me Softly Under a Bridge on Intersection 85</h3>
-                <p>A branching dialogue visual novel about talking to a stranger under a bridhe on intersection 85.<p>
-                <p>Built in Unity 6 as a demo for How to Sleep at Night, a branching dialouge, choices matter, visual
-                    novel inspired game about talking to dreamers.                
-                </p>
+                <div class="project-all-but-title">
+                    <p class="project-stuffs">A branching dialogue visual novel about talking to a stranger under a bridge on US intersection 85
+                        <br><br>
+                        Built in Unity 6 as a demo for How to Sleep at Night, a branching dialogue, choices matter, visual
+                        novel inspired game about talking to dreamers
+                        <br><br>
+                        Developed a Twine to Unity dialogue system which parses the Twine story text file for choices and dialogue 
+                        to be extracted into Unity.
+                    </p>
+                    <div class="image">
+                        <a href=""><img src="../media/Intersection85.png" alt=""></a>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="web-development-container" class="showcase-item">
             <h2>Web Development</h2>
-            <div>
-                <h3>Talk to Me Softly Under a Bridge on Intersection 85</h3>
-                <p>A branching dialogue visual novel about talking to a stranger under a bridhe on intersection 85.<p>
-                <p>Built in Unity 6 as a demo for How to Sleep at Night, a branching dialouge, choices matter, visual
-                    novel inspired game about talking to dreamers.                
-                </p>
+            <div class="right-left-project-grid">
+                <div class="image">
+                    <a href="https://people.rit.edu/dg8516/330/gao-d-hw2/" target="_blank"><img src="../media/DX4.png" alt=""></a>
+                </div>
+                <p class="project-stuffs">A rhythmn game audio visualizer built using in Javascript, utilizing the Canvas and Web Audio API.</p>
+                <h3>DX4</h3>
+            </div>
+            <div class="left-right-project-grid">
+                <h3>WaniKani Japanese Dictionary</h3>
+                <div class="project-all-but-title">
+                    <p class="project-stuffs">A Japanese dictionary which utilizes the WaniKani API, parsing their database to allow users to
+                        search for Japanese vocabulary words and radicals
+                        <br><br>
+                        Refactored the project into TypeScript for improved type safety and maintainability, as well as utilizing Webpack for
+                        efficient module bundling and optimized performance
+                        <br><br>
+                        Styled the application with Bulma CSS, creating a responsive and visually appealing user interface
+                    </p>
+                    <div class="image">
+                        <a href="https://people.rit.edu/dg8516/330/gao-d-h3-refactor/" target="_blank"><img src="../media/WKJpDict.png" alt=""></a>
+                    </div> 
+                </div>
+            </div>
+            <div class="right-left-project-grid">
+                <div class="image">
+                    <a href="https://people.rit.edu/~dg8516/235/project3/" target="_blank"><img src="../media/MusicTime.png" alt=""></a>
+                </div>
+                <p class="project-stuffs">A joke music production site that utilizes Howler.js in order to play sounds and create music.</p>
+                <h3>Music Time</h3>
             </div>
         </div>
         <div id="written-works-container" class="showcase-item">
             <h2>My Writing</h2>
-            <div>
-                <h3>Talk to Me Softly Under a Bridge on Intersection 85</h3>
-                <p>A branching dialogue visual novel about talking to a stranger under a bridhe on intersection 85.<p>
-                <p>Built in Unity 6 as a demo for How to Sleep at Night, a branching dialouge, choices matter, visual
-                    novel inspired game about talking to dreamers.                
-                </p>
+            <div id="writing-grid">
+                <p class="writing-name">Title</p>
+                <p class="published">Published</p>
+                <p class="writing-link">Link to Full Text</p>
+          
+                    <p class="writing-name">Full Course</p> 
+                    <p class="published">
+                        <a href="https://www.rit.edu/liberalarts/sites/rit.edu.liberalarts/files/signatures/Signatures-39.pdf" target="_blank" style="text-decoration: underline;">
+                            RIT's Signatures Art & Literary Magazine Volume 39 Page 52 
+                        </a>
+                    </p>
+                    <p class="link">
+                        <a href="https://people.rit.edu/dg8516/FullCourse/" target="_blank" rel="noopener">
+                            <i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;"></i>
+                        </a>
+                    </p>
             </div>
+          
         </div>
         <div id="work-experience-container" class="showcase-item">
             <h2>Work Experience</h2>
             <div>
-                <h3>Talk to Me Softly Under a Bridge on Intersection 85</h3>
-                <p>A branching dialogue visual novel about talking to a stranger under a bridhe on intersection 85.<p>
-                <p>Built in Unity 6 as a demo for How to Sleep at Night, a branching dialouge, choices matter, visual
-                    novel inspired game about talking to dreamers.                
-                </p>
+                <div class="employer">Lavner Education</div>
+                <div class="employee-role">Stem Instructor Internship</div>
+                <div class="work-time">June 2024 - August 2024</div>
             </div>
         </div>
     </div>
+    <footer>
+        <p>Website under Construction David Gao 2025 | david.04.gao@gmail.com | 3476817435</p>
+    </footer>
 </body>
+
 </html>
