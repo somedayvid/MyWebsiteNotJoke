@@ -242,7 +242,7 @@ h1{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     color: white;
     margin: 5vh 0;
 }
