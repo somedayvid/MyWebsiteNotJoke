@@ -33,6 +33,7 @@ body{
 
 .white-box {
     background-color: white;
+    
 }
 
 #links-container{
@@ -68,14 +69,14 @@ body{
 }
 
 #name{
-    padding: 30px 25px;
+    padding: 1vw 1vw;
     text-shadow: 3px 3px 1px lightgray;
     text-align: center;
     font-family: "Rowdies";
-    font-size: 30px;
+    font-size:4vw;
     transform: skew(-5deg,-3deg);
     margin: 25px;
-    box-shadow: 0 0 0 10px black;
+    box-shadow: 0 0 0 1vw black;
 }
 
 #roles-container{
@@ -99,8 +100,9 @@ body{
     left: 5px;
     font-size: 30px;
     background-color: black;
-    transform: scale(1.1,1.5) rotate(-3deg);
+    transform: scale(1.1,1.5) rotate(-2deg);
     z-index: -4;
+    width: 70%;
 }
 
 ul{
@@ -178,6 +180,7 @@ a{
     font-size: 20px;
     color:white;
     transform: scale(1.2,1.2) rotate(-.5deg);
+
 }
 
 .black-box-backing{
@@ -357,4 +360,58 @@ footer{
     font-family: "Darumadrop One";
     height: auto;
     font-size: 4vh;
+}
+
+@media (max-width: 1400px) {
+    .options-dropdown{
+        /* background-color: black; */
+    }
+    #page-container{
+        display: grid;
+        grid-template-areas: 
+        'top'
+        'bottom';
+    }
+
+    #name{
+        font-size:5vh;
+    }
+
+    #left-container{
+        grid-area: bottom;
+        margin-top: 0;
+        width: 100vw;
+    }
+
+    #name-container{
+        display: none;
+    }
+
+    #description{
+        margin-left: 0;
+    }
+
+    #right-container{
+        grid-area: top;
+        width: 100vw;
+        margin-left:0;
+    }
+
+    #links-black-backing{
+        left:6vw;
+        transform: scale(1.1,1.5) rotate(3deg);
+    }
+
+    #roles{
+        margin-left:2vw;
+    }
+
+    #links-box, #links-black-backing{
+        width:60%;
+    }
+
+    #roles-black-backing{
+        width:93%;
+        transform: scale(1.1,1.5) rotate(-1.5deg); ;
+    }
 }
