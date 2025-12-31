@@ -28,7 +28,7 @@ body{
 
 #right-container {
     width: 40%;
-    margin-left: calc(40% - 600px);
+    margin-left: calc(40% - 500px);
 }
 
 .white-box {
