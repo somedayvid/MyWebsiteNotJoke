@@ -413,6 +413,14 @@ footer{
     width: 100VW;
 }
 
+#footer-art-link{
+    color: black;
+}
+
+#footer-art-link:link{
+    text-decoration: underline;
+}
+
 @media (max-width: 1350px) {
     .options-dropdown{
         width: 50%;
