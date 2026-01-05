@@ -162,7 +162,7 @@ a{
     background-color: black;
     color: white;
     padding: 10px 0px 10px 20px;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-family: "Darumadrop One";
     z-index: 0;
     letter-spacing: calc(0.50vw - 5.5px);
@@ -547,11 +547,11 @@ footer{
     #options-container{
         text-align: center;
         margin-left: 15vw;
-        width: 90%;
+        width: 100%;
     }
 
     ul.options-dropdown li:nth-child(1) {margin-left: 67px; width: 55%;}
-    ul.options-dropdown li:nth-child(2) {margin-left: 52px; width: 60%;}
+    ul.options-dropdown li:nth-child(2) {margin-left: 52px; width: 62%;}
     ul.options-dropdown li:nth-child(3) {margin-left: 33px; width: 60%;}
     ul.options-dropdown li:nth-child(4) {margin-left: 20px; width: 59%;}
     ul.options-dropdown li:nth-child(5) {margin-left: 0px ; width: 66%;} 
